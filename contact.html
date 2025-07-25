@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+   body {
+  background-image: url('images/rooms/contact.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-weight: 300;
+  font-size: xx-large;
+}
+.subbtn{
+  border-radius: 50rem ;
+  height: 40px;
+  width: 100px;
+   background-color: transparent;
+     color: white;
+
+border: solid white 2px;
+
+}
+input{
+   border-radius: 50rem ;
+   background-color: transparent;
+color: white;
+border: solid white 2px;
+
+  }
+  textarea{
+       background-color: transparent;
+border: solid white 2px;
+
+  }
+ </style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html">Booking</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateContact()">
+  <input type="text" placeholder="Your Name" id="contact-name" required>
+  <input type="email" placeholder="Your Email" id="contact-email" required>
+  <textarea placeholder="Your Message" id="contact-message" required></textarea>
+  <button  type="submit" class="subbtn" onclick="showAlert()" >Send Message</button>
+  <p id="contact-error" style="color:red; font-size:14px; height:16px;"></p>
+</form>
+  </section>
+  <script>
+    function showAlert() {
+      alert("✅ sended 🎉");
+    }
+  </script>
+  
+</body>
+</html>
